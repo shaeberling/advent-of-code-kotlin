@@ -1,2 +1,5 @@
+.gradle
 out
+build
+session_cookie
 src/main/resources
