@@ -2,7 +2,7 @@ package com.s13g.aoc.aoc2023
 
 import com.s13g.aoc.PuzzleRunner
 
-private const val ONLY_RUN_NEW = false
+private const val ONLY_RUN_NEW = true
 
 /**
  * ---- Advent of Code 2023 ----
@@ -31,7 +31,7 @@ fun main() {
 //  runner.addProblem(19, Day19(), "", "", true)
 //  runner.addProblem(20, Day20(), "", "", true)
 //  runner.addProblem(21, Day21(), "", "", true)
-//  runner.addProblem(22, Day22(), "", "", true)
+  runner.addProblem(22, Day22(), "434", "61209", true)
 //  runner.addProblem(23, Day23(), "", "", true)
 //  runner.addProblem(24, Day24(), "", "", true)
 //  runner.addProblem(25, Day25(), "", "", true)
