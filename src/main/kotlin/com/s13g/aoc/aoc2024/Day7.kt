@@ -36,9 +36,9 @@ class Day7 : Solver {
 
     val results = mutableListOf<Boolean>()
     // Option 1: Do an addition
-    results.add(runNewValue(nums[0] + nums[1]))
+    if (runNewValue(nums[0] + nums[1])) return true
     // Option 2: Do a multiplication
-    results.add(runNewValue(nums[0] * nums[1]))
+    if (runNewValue(nums[0] * nums[1])) return true
     // Option 3: For part 2, do a concatenation.
     if (part2) {
       // Left-shift left operand depending on the size of the right operand.
@@ -48,8 +48,8 @@ class Day7 : Solver {
         newValueCon *= 10L
         rightVal /= 10
       }
-      results.add(runNewValue(newValueCon + nums[1]))
+      if (runNewValue(newValueCon + nums[1])) return true
     }
-    return results.any { it == true }
+    return false
   }
 }
