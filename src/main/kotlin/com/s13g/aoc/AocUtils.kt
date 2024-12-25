@@ -27,6 +27,9 @@ import kotlinx.coroutines.runBlocking
 import java.io.FileNotFoundException
 import java.io.IOException
 import java.nio.file.Path
+import kotlin.io.path.createDirectories
+import kotlin.io.path.createFile
+import kotlin.io.path.exists
 import kotlin.io.path.writeBytes
 import kotlin.math.abs
 import kotlin.math.max
@@ -48,17 +51,19 @@ fun readAsString(file: Path): List<String> {
 
 fun fetchAdventOfCodeInput(year: Int, day: Int, file: Path) {
   runBlocking {
-    val session = readAsString(Path.of("session_cookie")).first()
-    if (session.isBlank()) {
+    val fileLines = readAsString(Path.of("session_cookie"))
+    if (fileLines.isEmpty() || fileLines.first().isBlank()) {
       throw RuntimeException("ERROR: Unable to read session_cookie file.")
     }
+    val session = fileLines.first()
 
     val client = HttpClient(CIO)
     val url = "https://adventofcode.com/$year/day/$day/input"
     try {
       val response: HttpResponse = client.get(url) {
-        headers { append("Cookie", "session=$session")}
+        headers { append("Cookie", "session=$session") }
       }
+      if (!file.parent.exists()) file.parent.createDirectories()
       file.writeBytes(response.bodyAsBytes())
     } catch (e: Exception) {
       println("Error fetching input: ${e.message}")
@@ -109,6 +114,7 @@ fun XY.addTo(other: XY) {
 
 fun XY.subtract(other: XY) = XY(x - other.x, y - other.y)
 fun XY.add(other: XY) = XY(x + other.x, y + other.y)
+fun XY.mul(other: XY) = XY(x * other.x, y * other.y)
 
 fun XY.max() = maxOf(x, y)
 
