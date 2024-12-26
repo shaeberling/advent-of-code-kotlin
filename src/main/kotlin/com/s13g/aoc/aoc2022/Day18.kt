@@ -69,5 +69,5 @@ class Day18 : Solver {
       .minus(trappedAir)
       .minus(all).count()
 
-  data class XYZ(val x: Int, val y: Int, val z: Int)
+  private data class XYZ(val x: Int, val y: Int, val z: Int)
 }
