@@ -35,7 +35,7 @@ const val ANSI_WHITE = "\u001B[37m"
 
 class PuzzleRunner(private val onlyRunNew: Boolean,
                    private val year: Int) {
-  private val fileRoot = "src/main/resources/$year/"
+  private val fileRoot = "../advent-of-code-data/$year/"
   private var problems = mutableListOf<Problem>()
 
   fun run() {

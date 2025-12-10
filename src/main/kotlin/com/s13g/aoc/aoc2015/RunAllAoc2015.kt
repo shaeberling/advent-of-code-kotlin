@@ -22,7 +22,7 @@ fun main() {
 //  runner.addProblem(11, Day11(), "hepxxyzz", "heqaabcc")
 //  runner.addProblem(12, Day12(), "119433", "68466")
 //  runner.addProblem(13, Day13(), "618", "601")
-  runner.addProblem(14, Day14(), "2696", "", true)
+//  runner.addProblem(14, Day14(), "2696", "", true)
 //  runner.addProblem(15, Day15(), "", "", true)
 //  runner.addProblem(16, Day16(), "", "", true)
 //  runner.addProblem(17, Day17(), "", "", true)

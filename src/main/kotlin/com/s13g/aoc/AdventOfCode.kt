@@ -9,6 +9,7 @@ import com.s13g.aoc.aoc2021.main as main21
 import com.s13g.aoc.aoc2022.main as main22
 import com.s13g.aoc.aoc2023.main as main23
 import com.s13g.aoc.aoc2024.main as main24
+import com.s13g.aoc.aoc2025.main as main25
 
 class AdventOfCode {
 
@@ -22,7 +23,8 @@ class AdventOfCode {
 //      main21()
 //      main22()
 //      main23()
-      main24()
+//      main24()
+      main25()
     }
   }
 }

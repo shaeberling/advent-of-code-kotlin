@@ -32,6 +32,3 @@ tasks.test {
   useJUnitPlatform()
 }
 
-//tasks.processResources {
-//  dependsOn("CopyAocInputs")
-//}
