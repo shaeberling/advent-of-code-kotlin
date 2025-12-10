@@ -14,20 +14,20 @@ class Day17 : Solver {
     val crA = CamRobot(VM19(progA.toMutableList(), mutableListOf()))
     crA.run()
     val intersections = crA.getIntersections()
-    val resultA = intersections.sumBy { it.x * it.y }
+    val resultA = intersections.sumOf { it.x * it.y }
 
     // Figured this out by tracing the path from the output map (see input file)
-    val main = "A,B,A,C,A,B,C,A,B,C\n".map { it.toInt() }
-    val prgA = "R,12,R,4,R,10,R,12\n".map { it.toInt() }
-    val prgB = "R,6,L,8,R,10\n".map { it.toInt() }
-    val prgC = "L,8,R,4,R,4,R,6\n".map { it.toInt() }
+    val main = "A,B,A,C,A,B,C,A,B,C\n".map { it.code }
+    val prgA = "R,12,R,4,R,10,R,12\n".map { it.code }
+    val prgB = "R,6,L,8,R,10\n".map { it.code }
+    val prgC = "L,8,R,4,R,4,R,6\n".map { it.code }
 
     val input = mutableListOf<Int>()
     input.addAll(main)
     input.addAll(prgA)
     input.addAll(prgB)
     input.addAll(prgC)
-    input.addAll("n\n".map { it.toInt() })  // No map output.
+    input.addAll("n\n".map { it.code })  // No map output.
 
     val progB = progA.toMutableList()
     progB[0] = 2  // Wake up the robot.
@@ -75,7 +75,7 @@ class Day17 : Solver {
 
     override fun onOutput(out: Long) {
       lastOutput = out
-      outMapStr += out.toChar()
+      outMapStr += out.toInt().toChar()
       if (out == 35L) { // '#'
         map[XY(x, y)] = true
       }

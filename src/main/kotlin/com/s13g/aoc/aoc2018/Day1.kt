@@ -6,7 +6,7 @@ import com.s13g.aoc.Solver
 /** https://adventofcode.com/2018/day/1 */
 class Day1 : Solver {
   override fun solve(lines: List<String>): Result {
-    val resultA = lines.sumBy { s -> Integer.parseInt(s) }
+    val resultA = lines.sumOf { s -> Integer.parseInt(s) }
     return Result(resultA.toString(),
         getFirstDoubleSum(lines.map { s -> Integer.parseInt(s) }))
   }

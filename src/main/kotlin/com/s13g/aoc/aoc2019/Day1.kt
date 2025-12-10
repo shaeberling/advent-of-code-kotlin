@@ -6,8 +6,8 @@ import com.s13g.aoc.Solver
 /** https://adventofcode.com/2019/day/1 */
 class Day1 : Solver {
   override fun solve(lines: List<String>): Result {
-    val fuelA = lines.sumBy { l -> calcFuel(l.toInt()) }
-    val fuelB = lines.sumBy { l -> bFuel(l.toInt()) }
+    val fuelA = lines.sumOf { l -> calcFuel(l.toInt()) }
+    val fuelB = lines.sumOf { l -> bFuel(l.toInt()) }
     return Result("$fuelA", "$fuelB")
   }
 

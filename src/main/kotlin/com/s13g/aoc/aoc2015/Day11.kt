@@ -13,11 +13,11 @@ class Day11 : Solver {
   override fun solve(lines: List<String>): Result {
     val password = lines[0].map { it.code }.toMutableList()
     while (!isPasswordLegal(password)) incrementPassword(password)
-    val m1 = password.map { it.toChar() }.joinToString("")
+    val m1 = password.map { Char(it) }.joinToString("")
 
     incrementPassword(password)
     while (!isPasswordLegal(password)) incrementPassword(password)
-    val m2 = password.map { it.toChar() }.joinToString("")
+    val m2 = password.map { Char(it) }.joinToString("")
 
     return Result(m1, m2)
   }

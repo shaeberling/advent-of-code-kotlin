@@ -33,7 +33,7 @@ class Day23 : Solver {
       computers.forEach { it.step() }
 
       // For Part B, check if all queues are empty for a while.
-      if (computers.sumBy { it.packets.size } == 0) {
+      if (computers.sumOf { it.packets.size } == 0) {
         idleCounter++
       }
       if (idleCounter == 1000) {

@@ -12,9 +12,9 @@ class Day8 : Solver {
   override fun solve(lines: List<String>): Result {
 
     val m1 = lines.map { Pair(it.length, decode(it)) }
-      .sumBy { it.first - it.second }
+      .sumOf { it.first - it.second }
     val m2 = lines.map { Pair(it.length, encode(it)) }
-      .sumBy { it.second - it.first }
+      .sumOf { it.second - it.first }
 
     return resultFrom(m1, m2)
   }

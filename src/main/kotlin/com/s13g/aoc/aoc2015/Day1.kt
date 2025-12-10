@@ -25,7 +25,7 @@ import com.s13g.aoc.Result
  */
 class Day1 : Solver {
   override fun solve(lines: List<String>): Result {
-    val resultA = lines[0].sumBy { c -> if (c == '(') 1 else -1 }
+    val resultA = lines[0].sumOf { c: Char -> (if (c == '(') 1 else -1).toInt() }
     var resultB = 0
     var floor = 0
     for ((i, c) in lines[0].withIndex()) {

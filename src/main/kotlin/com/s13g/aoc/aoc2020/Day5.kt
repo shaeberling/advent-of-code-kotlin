@@ -44,8 +44,8 @@ private fun Range.process(c: Char): Int {
 private fun solveFast(lines: List<String>): Result {
   val occ = mutableSetOf<Int>()
   for (line in lines) {
-    var v = line.withIndex().sumBy { if (it.value == 'B') 2.0.pow(6 - it.index).toInt() * 8 else 0 }
-    v += line.withIndex().sumBy { if (it.value == 'R') 2.0.pow(9 - it.index).toInt() else 0 }
+    var v = line.withIndex().sumOf { if (it.value == 'B') 2.0.pow(6 - it.index).toInt() * 8 else 0 }
+    v += line.withIndex().sumOf { if (it.value == 'R') 2.0.pow(9 - it.index).toInt() else 0 }
     occ.add(v)
   }
   val b = (0..(127 * 8)).minBy { if (it !in occ && it - 1 in occ) it else Int.MAX_VALUE }

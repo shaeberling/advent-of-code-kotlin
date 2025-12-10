@@ -12,8 +12,8 @@ class Day3 : Solver {
   override fun solve(lines: List<String>): Result {
     val scoreFun =
       { ch: Char ->
-        if (ch.isLowerCase()) ch.toInt() - 'a'.toInt() + 1
-        else ch.toInt() - 'A'.toInt() + 27
+        if (ch.isLowerCase()) ch.code - 'a'.code + 1
+        else ch.code - 'A'.code + 27
       }
 
     val m1 = lines.map { line ->
@@ -21,13 +21,13 @@ class Day3 : Solver {
         line.substring(0, line.length / 2),
         line.substring(line.length / 2, line.length)
       )
-    }.sumBy {
+    }.sumOf {
       scoreFun(it.first.toSet().intersect(it.second.toSet()).first())
     }
 
     val m2 = lines.windowed(3, 3).map {
       it[0].toSet().intersect(it[1].toSet().intersect(it[2].toSet())).first()
-    }.sumBy { scoreFun(it) }
+    }.sumOf { scoreFun(it) }
     return resultFrom(m1, m2)
   }
 }

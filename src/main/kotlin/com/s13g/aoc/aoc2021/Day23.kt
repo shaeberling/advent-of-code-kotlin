@@ -176,7 +176,7 @@ class Day23 : Solver {
     }
 
     fun isDone() = world
-      .podIds.sumBy { podID ->
+      .podIds.sumOf { podID ->
         world.roomLocations(podID)
           .count { loc -> get(loc.x, loc.y) != podID }
       } == 0

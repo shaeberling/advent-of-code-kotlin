@@ -11,19 +11,19 @@ import com.s13g.aoc.resultFrom
 class Day2 : Solver {
   override fun solve(lines: List<String>): Result {
     val beats = mapOf(1 to 3, 2 to 1, 3 to 2)
-    val m1 = lines.sumBy { score1(it, beats) }
-    val m2 = lines.sumBy { score2(it, beats) }
+    val m1 = lines.sumOf { score1(it, beats) }
+    val m2 = lines.sumOf { score2(it, beats) }
     return resultFrom(m1, m2)
   }
 
   private fun score1(play: String, beats: Map<Int, Int>): Int {
-    val p1 = play[0].toInt() - 'A'.toInt() + 1
-    val p2 = play[2].toInt() - 'X'.toInt() + 1
+    val p1 = play[0].code - 'A'.code + 1
+    val p2 = play[2].code - 'X'.code + 1
     return score(p1, p2, beats)
   }
 
   private fun score2(play: String, beats: Map<Int, Int>): Int {
-    val p1 = play[0].toInt() - 'A'.toInt() + 1
+    val p1 = play[0].code - 'A'.code + 1
 
     val p2 = if (play[2] == 'Y') p1
     else if (play[2] == 'X') beats[p1]!!

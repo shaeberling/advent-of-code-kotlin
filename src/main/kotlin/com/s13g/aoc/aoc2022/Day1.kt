@@ -12,7 +12,7 @@ class Day1 : Solver {
   override fun solve(lines: List<String>): Result {
     val elves = lines.joinToString("\n")
       .split("\n\n")
-      .map { it -> it.split("\n").sumBy { it.toInt() } }
+      .map { it -> it.split("\n").sumOf { it.toInt() } }
       .sorted().reversed()
 
     return resultFrom(elves[0], elves.subList(0, 3).sum())
