@@ -20,12 +20,11 @@ repositories {
 //}
 
 dependencies {
-  implementation(kotlin("stdlib"))
   implementation("com.google.guava:guava:27.1-jre")
-  implementation("io.ktor:ktor-client-core:3.0.1")
-  implementation("io.ktor:ktor-client-cio:3.0.1")
+  implementation("io.ktor:ktor-client-core:3.0.3")
+  implementation("io.ktor:ktor-client-cio:3.0.3")
   testImplementation(kotlin("test"))
-  testImplementation("org.junit.jupiter:junit-jupiter:5.10.0") // Latest JUnit version
+  testImplementation("org.junit.jupiter:junit-jupiter:5.11.3")
 }
 
 tasks.test {
