@@ -5,7 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="469ee124-19ed-435c-9775-70fc6d45b12f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day1.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day10.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day10.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day11.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day11.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day12.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day12.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day3.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day4.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day5.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day5.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day6.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day6.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day7.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day7.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day8.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day8.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day9.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day9.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/RunAllAoc2025.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/RunAllAoc2025.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +95,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.31609195",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
@@ -139,6 +152,20 @@
       <updated>1765250263996</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/com/s13g/aoc/aoc2025/Day7.kt</url>
+          <line>36</line>
+          <properties>
+            <option name="lambda-ordinal" value="-1" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
